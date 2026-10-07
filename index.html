@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RollOfFun - Khăn giấy in hình & dập chìm cá nhân hóa</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            pink: '#FF85A1',
+                            softPink: '#FFE5EC',
+                            yellow: '#FFD166',
+                            blue: '#4EA8DE',
+                            green: '#06D6A0',
+                            dark: '#2B2D42',
+                            cream: '#FFF9F5'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-brand-cream text-brand-dark antialiased selection:bg-brand-pink selection:text-white">
+
+    <!-- NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-pink-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-2xl bg-brand-pink flex items-center justify-center text-white font-black text-xl shadow-md shadow-pink-200">
+                    🧻
+                </div>
+                <span class="text-2xl font-extrabold bg-gradient-to-r from-brand-pink to-brand-blue bg-clip-text text-transparent">RollOfFun</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-7 font-semibold text-gray-600 text-sm">
+                <a href="#about" class="hover:text-brand-pink transition-colors">Ý tưởng</a>
+                <a href="#tech" class="hover:text-brand-pink transition-colors">Kỹ thuật & An toàn</a>
+                <a href="#market" class="hover:text-brand-pink transition-colors">Thị trường & B2B</a>
+                <a href="#finance" class="hover:text-brand-pink transition-colors">Tài chính</a>
+                <a href="#risk" class="hover:text-brand-pink transition-colors">Rủi ro & Giải pháp</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="#contact" class="bg-brand-pink hover:bg-pink-600 text-white font-bold px-5 py-2.5 rounded-full shadow-lg shadow-pink-200 transition-all hover:scale-105 text-sm flex items-center gap-2">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i> Đặt mẫu ngay
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-brand-softPink/50 to-brand-cream relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-pink-200 shadow-sm text-xs font-bold text-brand-pink">
+                        <span>🌸</span> Giải pháp khăn giấy cá nhân hóa đột phá
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-brand-dark leading-tight">
+                        Biến vật dụng quen thuộc<br>
+                        <span class="bg-gradient-to-r from-brand-pink via-purple-500 to-brand-blue bg-clip-text text-transparent">thành dấu ấn riêng!</span>
+                    </h1>
+                    <p class="text-gray-600 text-base md:text-lg max-w-xl">
+                        Khăn giấy in hình và dập chìm 3D độc bản dành cho học sinh, giới trẻ, quà tặng sự kiện cùng chuỗi thương hiệu cà phê, F&B cao cấp.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto bg-brand-pink hover:bg-pink-600 text-white font-bold px-8 py-4 rounded-full shadow-xl shadow-pink-200 transition-all hover:scale-105 text-center flex items-center justify-center gap-2">
+                            Tạo mẫu khăn giấy <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#tech" class="w-full sm:w-auto bg-white hover:bg-gray-50 text-brand-dark font-bold px-8 py-4 rounded-full border-2 border-gray-200 transition-all text-center">
+                            Tìm hiểu tiêu chuẩn an toàn
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CUTIES ILLUSTRATION (Mô phỏng minh họa khăn giấy) -->
+                <div class="relative flex justify-center">
+                    <div class="w-72 h-72 md:w-96 md:h-96 bg-brand-yellow/30 rounded-full absolute filter blur-3xl -z-10 animate-pulse"></div>
+                    <div class="bg-white p-6 md:p-8 rounded-3xl shadow-2xl border-4 border-white relative transform rotate-1 hover:rotate-0 transition-transform">
+                        <svg class="w-full h-auto max-w-xs mx-auto drop-shadow-md" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Cuộn giấy -->
+                            <rect x="70" y="80" width="160" height="170" rx="30" fill="#FFFFFF" stroke="#2B2D42" stroke-width="5"/>
+                            <ellipse cx="150" cy="80" rx="80" ry="25" fill="#FFE5EC" stroke="#2B2D42" stroke-width="5"/>
+                            <ellipse cx="150" cy="80" rx="30" ry="10" fill="#2B2D42"/>
+                            <!-- Tờ giấy thả dài -->
+                            <path d="M 70 170 Q 50 210 60 260 Q 110 280 140 250 L 140 170 Z" fill="#FFF9F5" stroke="#2B2D42" stroke-width="5"/>
+                            <!-- Hình in dập nổi & tim dễ thương -->
+                            <path d="M 85 200 Q 95 190 105 200" stroke="#FF85A1" stroke-width="4" stroke-linecap="round" fill="none"/>
+                            <path d="M 85 220 Q 95 210 105 220" stroke="#4EA8DE" stroke-width="4" stroke-linecap="round" fill="none"/>
+                            <path d="M 100 235 C 100 230, 110 230, 110 235 C 110 230, 120 230, 120 235 C 120 245, 110 250, 110 255 C 110 250, 100 245, 100 235 Z" fill="#FF85A1"/>
+                            <!-- Khuôn mặt đáng yêu -->
+                            <circle cx="120" cy="130" r="8" fill="#2B2D42"/>
+                            <circle cx="180" cy="130" r="8" fill="#2B2D42"/>
+                            <circle cx="105" cy="140" r="10" fill="#FF85A1" opacity="0.4"/>
+                            <circle cx="195" cy="140" r="10" fill="#FF85A1" opacity="0.4"/>
+                            <path d="M 140 142 Q 150 152 160 142" stroke="#2B2D42" stroke-width="4" stroke-linecap="round" fill="none"/>
+                            <!-- Phụ kiện lấp lánh -->
+                            <text x="210" y="70" font-size="28">✨</text>
+                            <text x="30" y="120" font-size="24">💖</text>
+                        </svg>
+                        <div class="mt-4 text-center">
+                            <span class="inline-block bg-brand-softPink text-brand-pink font-bold text-xs px-4 py-1.5 rounded-full">✨ Mực in an toàn • Dập chìm 3D độc bản</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. Ý TƯỞNG VÀ MỤC TIÊU KINH DOANH -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-black tracking-widest uppercase text-brand-pink mb-2">Định hướng chiến lược</h2>
+                <p class="text-3xl md:text-4xl font-extrabold text-brand-dark">Ý tưởng & Mục tiêu phát triển</p>
+            </div>
+
+            <!-- 3 Cột Lý Do Chọn Ý Tưởng -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="p-8 rounded-3xl bg-brand-cream border border-orange-100 hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-yellow flex items-center justify-center text-2xl mb-6 shadow-md">🎯</div>
+                    <h3 class="text-lg font-bold text-brand-dark mb-2">Nhu cầu cá nhân hóa</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Người tiêu dùng hiện đại, đặc biệt là giới trẻ, luôn tìm kiếm những sản phẩm mang đậm phong cách cá nhân riêng biệt.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-brand-softPink/40 border border-pink-100 hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-pink text-white flex items-center justify-center text-2xl mb-6 shadow-md">🌱</div>
+                    <h3 class="text-lg font-bold text-brand-dark mb-2">Thị trường ngách mới</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Phân khúc khăn giấy in theo yêu cầu còn rất mới mẻ, mang lại cơ hội tiên phong và cạnh tranh vượt trội.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-blue-50 border border-blue-100 hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-blue text-white flex items-center justify-center text-2xl mb-6 shadow-md">🚀</div>
+                    <h3 class="text-lg font-bold text-brand-dark mb-2">Tính lan tỏa cao</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Sản phẩm có tính ứng dụng thường nhật cao, dễ dàng trở thành chủ đề chia sẻ trên mạng xã hội và truyền miệng.</p>
+                </div>
+            </div>
+
+            <!-- Mục Tiêu Ngắn & Dài Hạn -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 rounded-3xl bg-slate-900 text-white relative overflow-hidden">
+                    <span class="text-brand-pink font-bold text-xs uppercase tracking-wider">Lộ trình tăng trưởng</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-4">Mục tiêu ngắn hạn</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5"></i>
+                            <span>Tập trung phục vụ đối tượng học sinh, sinh viên, quán cà phê độc lập và các sự kiện quy mô vừa & nhỏ.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5"></i>
+                            <span>Xây dựng hình ảnh thương hiệu khăn giấy cá nhân hóa quen thuộc, thân thiện.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-8 rounded-3xl bg-gradient-to-br from-brand-pink to-purple-600 text-white relative overflow-hidden">
+                    <span class="text-yellow-200 font-bold text-xs uppercase tracking-wider">Tầm nhìn dài hạn</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-4">Mục tiêu dài hạn</h3>
+                    <ul class="space-y-3 text-sm text-pink-100">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-yellow-300 flex-shrink-0 mt-0.5"></i>
+                            <span>Mở rộng mạng lưới phân phối, đồng hành cùng các chuỗi F&B, nhà hàng, khách sạn lớn.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-yellow-300 flex-shrink-0 mt-0.5"></i>
+                            <span>Đột phá trở thành món quà tặng cá nhân hóa cao cấp cho các dịp lễ và sự kiện đặc biệt.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. KỸ THUẬT & AN TOÀN SẢN PHẨM -->
+    <section id="tech" class="py-20 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-black tracking-widest uppercase text-brand-blue mb-2">Tiêu chuẩn sản xuất</h2>
+                <p class="text-3xl md:text-4xl font-extrabold text-brand-dark">Kỹ thuật & Mực in an toàn</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Giấy -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-pink-100 text-brand-pink flex items-center justify-center mb-6">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-brand-dark mb-3">1. Chất liệu giấy cao cấp</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Sử dụng giấy mềm, dai, thấm hút vượt trội. Ưu tiên nguồn gốc thiên nhiên đạt chuẩn an toàn vệ sinh.</p>
+                    <span class="inline-block bg-pink-50 text-brand-pink text-xs font-bold px-3 py-1 rounded-full">Tùy chọn 2–3 lớp tiết kiệm</span>
+                </div>
+
+                <!-- Công nghệ in -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center mb-6">
+                        <i data-lucide="printer" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-brand-dark mb-3">2. Công nghệ in hiện đại</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Linh hoạt kết hợp công nghệ in Flexo (cho đơn số lượng lớn) hoặc in kỹ thuật số sắc nét theo từng mẫu lẻ.</p>
+                    <span class="inline-block bg-blue-50 text-brand-blue text-xs font-bold px-3 py-1 rounded-full">Sắc nét • Không lem màu</span>
+                </div>
+
+                <!-- Mực in -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-green-100 text-brand-green flex items-center justify-center mb-6">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-brand-dark mb-3">3. Mực in lành tính</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">Mực in chuyên dụng đạt chứng nhận an toàn sinh học, hoàn toàn không chứa hóa chất gây kích ứng da.</p>
+                    <span class="inline-block bg-green-50 text-brand-green text-xs font-bold px-3 py-1 rounded-full">100% An toàn cho da</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. NGHIÊN CỨU THỊ TRƯỜNG -->
+    <section id="market" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-brand-dark to-slate-800 rounded-3xl p-8 md:p-12 text-white shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-brand-yellow font-bold text-xs uppercase tracking-widest">Phân tích thị trường</span>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mt-2 mb-6">Khách hàng & Lợi thế cạnh tranh</h2>
+                        
+                        <div class="space-y-6 text-sm">
+                            <div class="flex gap-4 items-start">
+                                <div class="p-2.5 rounded-xl bg-white/10 text-brand-yellow flex-shrink-0"><i data-lucide="users" class="w-5 h-5"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-white text-base">Đối tượng khách hàng</h4>
+                                    <p class="text-gray-300">Học sinh, sinh viên, người trẻ yêu thích sự sáng tạo và các chủ quán cà phê, đơn vị tổ chức sự kiện.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <div class="p-2.5 rounded-xl bg-white/10 text-brand-pink flex-shrink-0"><i data-lucide="trending-up" class="w-5 h-5"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-white text-base">Xu hướng thị trường</h4>
+                                    <p class="text-gray-300">Ưa chuộng quà tặng độc lạ, mang dấu ấn cá nhân hoặc các chi tiết nhỏ mang tính lan tỏa cao (viral).</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <div class="p-2.5 rounded-xl bg-white/10 text-brand-blue flex-shrink-0"><i data-lucide="swords" class="w-5 h-5"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-white text-base">Đối thủ & Lợi thế</h4>
+                                    <p class="text-gray-300">Cạnh tranh trực tiếp với các cửa hàng quà tặng trên TikTok/Shopee nhờ lợi thế sản phẩm mới lạ, dễ đặt hàng và dập chìm 3D độc quyền.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card minh họa B2B & B2C -->
+                    <div class="space-y-4">
+                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/15">
+                            <div class="text-2xl mb-2">☕</div>
+                            <h4 class="font-bold text-lg text-brand-yellow">Dành cho quán cà phê & F&B</h4>
+                            <p class="text-xs text-gray-300 mt-1">Dập chìm logo và in thông điệp thương hiệu lên từng cuộn giấy bàn ăn, nâng tầm đẳng cấp dịch vụ.</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/15">
+                            <div class="text-2xl mb-2">🎁</div>
+                            <h4 class="font-bold text-lg text-brand-pink">Dành cho sinh nhật & Sự kiện</h4>
+                            <p class="text-xs text-gray-300 mt-1">In ảnh kỷ niệm, lời chúc hay hình ảnh chế (meme) vui nhộn làm quà tặng bất ngờ, ấn tượng khó quên.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. QUẢN LÝ TÀI CHÍNH -->
+    <section id="finance" class="py-20 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-black tracking-widest uppercase text-brand-green mb-2">Mô hình tài chính</h2>
+                <p class="text-3xl md:text-4xl font-extrabold text-brand-dark">Kế hoạch & Chi phí sản xuất</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Chi phí đầu tư -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">💰</div>
+                    <h3 class="font-bold text-lg text-brand-dark mb-2">Chi phí đầu tư ban đầu</h3>
+                    <p class="text-xs text-gray-500 mb-4">Bao gồm máy in, khuôn dập mô-đun chữ cái, nguyên liệu giấy ban đầu và chi phí tiếp thị (marketing).</p>
+                    <div class="p-4 bg-amber-50 rounded-2xl">
+                        <span class="text-xs text-amber-800 font-semibold">Tối ưu hóa theo quy mô nhỏ</span>
+                    </div>
+                </div>
+
+                <!-- Giá thành sản xuất -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-blue-100 text-brand-blue flex items-center justify-center mx-auto mb-4 text-2xl font-bold">⚙️</div>
+                    <h3 class="font-bold text-lg text-brand-dark mb-2">Giá thành sản xuất (COGS)</h3>
+                    <p class="text-xs text-gray-500 mb-4">Gồm phôi giấy 2–3 lớp + mực in an toàn + chi phí gia công dập nổi và bao bì hoàn thiện.</p>
+                    <div class="p-4 bg-blue-50 rounded-2xl">
+                        <span class="text-xs text-brand-blue font-semibold">Chi phí cạnh tranh tối đa</span>
+                    </div>
+                </div>
+
+                <!-- Giá bán đề xuất -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-green-100 text-brand-green flex items-center justify-center mx-auto mb-4 text-2xl font-bold">🏷️</div>
+                    <h3 class="font-bold text-lg text-brand-dark mb-2">Giá bán & Biên lợi nhuận</h3>
+                    <p class="text-xs text-gray-500 mb-4">Giá bán linh hoạt theo gói quà tặng bán lẻ (B2C) hoặc chiết khấu số lượng lớn cho hợp đồng B2B.</p>
+                    <div class="p-4 bg-green-50 rounded-2xl">
+                        <span class="text-xs text-brand-green font-semibold">Đảm bảo điểm hòa vốn nhanh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PHÂN TÍCH RỦI RO & GIẢI PHÁP -->
+    <section id="risk" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-black tracking-widest uppercase text-brand-pink mb-2">Quản trị rủi ro</h2>
+                <p class="text-3xl md:text-4xl font-extrabold text-brand-dark">Rủi ro kinh doanh & Phương án khắc phục</p>
+            </div>
+
+            <div class="space-y-4 max-w-4xl mx-auto">
+                <!-- Risk 1 -->
+                <div class="p-6 rounded-2xl bg-brand-cream border border-orange-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <span class="p-2 rounded-xl bg-orange-100 text-orange-600 font-bold text-xs">Thị trường</span>
+                        <h4 class="font-bold text-brand-dark text-sm">Nhu cầu sản phẩm chưa được kiểm chứng rộng rãi.</h4>
+                    </div>
+                    <div class="text-xs text-gray-600 bg-white px-4 py-2.5 rounded-xl border border-gray-100 flex items-center gap-2">
+                        <i data-lucide="arrow-right-circle" class="w-4 h-4 text-brand-pink flex-shrink-0"></i>
+                        <span><strong>Giải pháp:</strong> Khảo sát nhu cầu & thử nghiệm bán quy mô nhỏ.</span>
+                    </div>
+                </div>
+
+                <!-- Risk 2 -->
+                <div class="p-6 rounded-2xl bg-brand-softPink/40 border border-pink-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <span class="p-2 rounded-xl bg-pink-100 text-brand-pink font-bold text-xs">An toàn</span>
+                        <h4 class="font-bold text-brand-dark text-sm">Sản phẩm tiếp xúc trực tiếp với da nhạy cảm.</h4>
+                    </div>
+                    <div class="text-xs text-gray-600 bg-white px-4 py-2.5 rounded-xl border border-gray-100 flex items-center gap-2">
+                        <i data-lucide="arrow-right-circle" class="w-4 h-4 text-brand-pink flex-shrink-0"></i>
+                        <span><strong>Giải pháp:</strong> Kiểm soát chặt chẽ phôi giấy & chứng nhận mực in.</span>
+                    </div>
+                </div>
+
+                <!-- Risk 3 -->
+                <div class="p-6 rounded-2xl bg-blue-50 border border-blue-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <span class="p-2 rounded-xl bg-blue-100 text-brand-blue font-bold text-xs">Sản xuất</span>
+                        <h4 class="font-bold text-brand-dark text-sm">Khuôn dập & cá nhân hóa làm quy trình phức tạp.</h4>
+                    </div>
+                    <div class="text-xs text-gray-600 bg-white px-4 py-2.5 rounded-xl border border-gray-100 flex items-center gap-2">
+                        <i data-lucide="arrow-right-circle" class="w-4 h-4 text-brand-blue flex-shrink-0"></i>
+                        <span><strong>Giải pháp:</strong> Chuẩn hóa quy trình từ duyệt mẫu đến xuất xưởng.</span>
+                    </div>
+                </div>
+
+                <!-- Risk 4 -->
+                <div class="p-6 rounded-2xl bg-amber-50 border border-amber-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <span class="p-2 rounded-xl bg-amber-100 text-amber-700 font-bold text-xs">Tài chính</span>
+                        <h4 class="font-bold text-brand-dark text-sm">Chi phí làm khuôn dập ban đầu cao.</h4>
+                    </div>
+                    <div class="text-xs text-gray-600 bg-white px-4 py-2.5 rounded-xl border border-gray-100 flex items-center gap-2">
+                        <i data-lucide="arrow-right-circle" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
+                        <span><strong>Giải pháp:</strong> Sử dụng khuôn mô-đun ghép chữ & tính lại giá vốn.</span>
+                    </div>
+                </div>
+
+                <!-- Risk 5 -->
+                <div class="p-6 rounded-2xl bg-green-50 border border-green-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <span class="p-2 rounded-xl bg-green-100 text-brand-green font-bold text-xs">Cạnh tranh</span>
+                        <h4 class="font-bold text-brand-dark text-sm">Ý tưởng dễ bị đối thủ sao chép.</h4>
+                    </div>
+                    <div class="text-xs text-gray-600 bg-white px-4 py-2.5 rounded-xl border border-gray-100 flex items-center gap-2">
+                        <i data-lucide="arrow-right-circle" class="w-4 h-4 text-brand-green flex-shrink-0"></i>
+                        <span><strong>Giải pháp:</strong> Đẩy mạnh nhận diện thương hiệu & kho mẫu độc quyền.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / ĐẶT HÀNG -->
+    <footer id="contact" class="bg-brand-dark text-white pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 pb-12 border-b border-gray-700">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 rounded-xl bg-brand-pink flex items-center justify-center text-white font-black text-sm">🧻</div>
+                        <span class="text-xl font-extrabold text-white">RollOfFun</span>
+                    </div>
+                    <p class="text-gray-400 text-sm max-w-sm mb-6">
+                        Dự án khăn giấy in theo yêu cầu & dập chìm 3D tiên phong. Kết hợp tính ứng dụng hàng ngày với trải nghiệm cá nhân hóa độc đáo.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-pink transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-pink transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-pink transition-colors"><i data-lucide="music-2" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Form Đăng Ký Tư Vấn -->
+                <div class="bg-slate-800 p-6 rounded-3xl border border-slate-700">
+                    <h4 class="font-bold text-lg mb-2 text-brand-yellow">Đăng ký tư vấn & nhận mẫu thử</h4>
+                    <p class="text-xs text-gray-400 mb-4">Dành cho cá nhân đặt hàng hoặc doanh nghiệp F&B/Sự kiện.</p>
+                    <form class="space-y-3" onsubmit="event.preventDefault(); alert('Cảm ơn bạn! RollOfFun sẽ liên hệ tư vấn ngay.');">
+                        <input type="text" placeholder="Họ và tên của bạn" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-brand-pink" required>
+                        <input type="tel" placeholder="Số điện thoại / Zalo" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-brand-pink" required>
+                        <select class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-gray-400 focus:outline-none focus:border-brand-pink">
+                            <option>Nhu cầu: Đặt lẻ cá nhân hóa / quà tặng</option>
+                            <option>Nhu cầu: Đặt mẫu cho quán cà phê / nhà hàng (B2B)</option>
+                            <option>Nhu cầu: Đặt khăn giấy cho sự kiện / tiệc</option>
+                        </select>
+                        <button type="submit" class="w-full bg-brand-pink hover:bg-pink-600 font-bold py-3 rounded-xl transition-colors text-sm text-white">Gửi yêu cầu hỗ trợ</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="pt-8 text-center text-xs text-gray-500">
+                <p>&copy; 2026 RollOfFun Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Init Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
